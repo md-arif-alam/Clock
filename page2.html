@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="alarm-clock.png">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="clock-container">
+                <button class="button-29"> 
+                 <a href="./index.html"><img src="clock.png" width="20px" height="20px"></a>
+                </button>
+                <button class="button-29">
+                 <a href="./page2.html"><img src="alarm-clock.png" width="20px" height="20px"></a>
+                </button>
+                
+            </div>
+            <div class="sub-container">
+                <div class="time">
+                    <div class="block">
+                        <span id="hour">00</span><span>Hours</span>
+                    </div> 
+                    <div class="block">
+                        <span id="min">00</span><span>Minutes</span>
+                    </div> 
+                    <div class="block">
+                        <span id="sec">00</span><span>Seconds</span>
+                    <!-- </div>
+                    <div id="am_pm">AM</div>
+                </div> -->
+            </div>
+        </div>
+        <div class="button-con">
+            <div>
+                <button class="button-20" id="start-but" onclick="handleStart()">Start</button>
+            </div>
+            <div>
+                <button class="button-20" onclick="handleStop()">Reset</button>
+            </div>
+            <div>
+                <button class="button-20" onclick="handlePause()">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
